@@ -123,9 +123,8 @@ footer a:hover {
 }
 
 #contact h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 18px;
   color: var(--color-text);
-  font-family: "Segoe UI", Roboto, sans‑serif;
 }
 
 #contact-form .form-field {
