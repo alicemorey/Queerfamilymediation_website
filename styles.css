@@ -1,0 +1,182 @@
+ :root {
+  --color-bg: #FAD1BEE8;
+  --color-text: #014A3EF2;
+  --color-accent: #2596be;
+  --color-cream: #FFF6F0F5;
+  --color-pink: #F6CCCFBD;
+  --color-orange: #FF5E1BEB;
+  
+}
+body {
+  
+}
+
+
+ 
+ /* Basic reset / global */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif }
+
+header {
+    display: flex;
+    justify-content: flex-start;   /* keeps title + nav closer together */
+    align-items: center;
+    gap: 150px;                     /* controls spacing BETWEEN title + nav */
+    padding: 0.8rem 2.5rem;        /* increased padding = wider/taller header */
+    border-bottom: 2px solid var(--color-text);
+    background: var(--color-bg);
+}
+
+    /* Indent the title */
+header .site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: 1px; 
+    margin-left: 100px;             /* <-- INDENTS the title */
+}
+
+/* Nav stays closer to title */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;  
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: var(--color-orange);
+}
+    
+#home p {
+    font-size: 20px; 
+    line-height: 1.75;            
+    max-width: 800px;           
+    margin: 1.5rem auto 3rem auto;  
+    margin-bottom: 150px;       
+    padding: 0 1rem;              
+    color: var(--color-text);     
+    text-align: left;
+    letter-spacing: 0.8px; 
+    font-weight: 350;
+    font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  
+}
+
+img {
+    display: block;          /* allows margin auto to work */
+    margin: 2rem auto;       /* centers the image horizontally */
+    max-width: 800px;        /* controls how small it should be — adjust as you like */
+    width: 100%;             /* responsive scaling */
+    height: auto;            /* keeps proportions correct */
+    }
+
+    /* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    color: var(--color-text);
+    border-top: 2px solid var(--color-text);
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    }
+
+footer a {
+  color: var(--color-text);      
+  text-decoration: underline;         
+  margin: 0 0.5rem;             
+}
+
+footer a:hover {
+  color: var(--color-orange);   
+  text-decoration:none;    
+}
+
+/* CONTACT FORM STYLES */
+#contact {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  font-family: "Segoe UI", Roboto, sans‑serif;
+}
+
+#contact-form .form-field {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 3px solid var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--color-bg);      /* light background for fields */
+  color: var(--color-text);
+}
+
+#contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+#contact-form button {
+  padding: 0.9rem 1.8rem;
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+  background: var(--color-orange);
+}
+
+/* optional: input / textarea focus style */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 150, 190, 0.2);
+}
