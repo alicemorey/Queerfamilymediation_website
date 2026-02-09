@@ -38,6 +38,7 @@ header {
     gap: 150px;                     /* controls spacing BETWEEN title + nav */
     padding: 0.8rem 2.5rem;        /* increased padding = wider/taller header */
     border-bottom: 2px solid var(--color-text);
+    left: calc(-100vw + 100%);
     background: var(--color-bg);
 }
 
