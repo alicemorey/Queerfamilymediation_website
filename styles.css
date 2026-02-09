@@ -298,6 +298,7 @@ footer a:hover {
     justify-content: space-between; /* title left, nav right */
     padding: 0.5rem 1rem;     /* less padding */
     gap: 1rem;
+     left: calc(-100vw + 100%);
   }
 
   header .site-title {
@@ -324,6 +325,7 @@ footer a:hover {
   #contact h2::after {
     left: 0;                  /* start at left of viewport */
     width: 100vw;             /* full width underline */
+     left: calc(-100vw + 100%);
   }
 
   /* FORM CONTAINER */
