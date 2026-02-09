@@ -13,9 +13,6 @@
   <header>
     <a href="#" class="site-title">Queer Family Mediation</a>
     <nav>
-      <ul>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
     </nav>
   </header>
 
@@ -43,6 +40,34 @@
          often leaves people with the sense that they have been listened to and have 
          autonomy over decisions that affect them.</p>
     </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+        <form id="contact-form" action="contact.php" method="POST">
+          <div class="form-field">
+      <h3>Name *</h3>
+          <label for="name">First</label><br>
+          <input type="text" id="name" name="name" required>
+          <label for="name">Last</label><br>
+          <input type="text" id="" name="name" required>
+    </div>
+
+    <div class="form-field">
+      <h3>Email *</h3>
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-field">
+      <label for="message">Tell me a bit about what you’re looking for *</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <div class="form-field">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</section>
 
   </main>
 
