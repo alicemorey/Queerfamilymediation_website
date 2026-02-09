@@ -42,28 +42,46 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-        <form id="contact-form" action="contact.php" method="POST">
-          <div class="form-field">
-      <h3>Name *</h3>
-          <label for="name">First</label><br>
-          <input type="text" id="name" name="name" required>
-          <label for="name">Last</label><br>
-          <input type="text" id="" name="name" required>
+  <h2>Contact</h2>
+
+  <form id="contact-form" action="contact.php" method="POST">
+    <div class="form-row">
+      <label for="first-name">First Name *</label>
+      <input type="text" id="first-name" name="first-name" required>
     </div>
 
-    <div class="form-field">
-      <h3>Email *</h3>
-        <label for="email"></label><br>
-        <input type="email" id="email" name="email" required>
+    <div class="form-row">
+      <label for="last-name">Last Name *</label>
+      <input type="text" id="last-name" name="last-name" required>
     </div>
 
-    <div class="form-field">
-      <label for="message">Tell me a bit about what you’re looking for *</label><br>
+    <div class="form-row">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="pronouns">Pronouns</label>
+      <input type="text" id="pronouns" name="pronouns">
+    </div>
+
+
+    <div class="form-row">
+      <label for="message">Tell me a bit about what you're looking for *</label>
       <textarea id="message" name="message" rows="5" required></textarea>
     </div>
 
-    <div class="form-field">
+    <div class="form-row checkbox-row">
+      <input type="checkbox" id="updates" name="updates">
+      <label for="updates">I would like to receive occasional email updates from you</label>
+    </div>
+
+    <div class="form-row checkbox-row">
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I agree to you processing my personal data in accordance with the Datenschutz on this site.</label>
+    </div>
+
+    <div class="form-row">
       <button type="submit">Send</button>
     </div>
   </form>
