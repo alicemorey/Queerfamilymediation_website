@@ -71,7 +71,7 @@ header nav a:hover {
 }
     
 #home p {
-    font-size: 20px; 
+    font-size: 18px; 
     line-height: 1.75;            
     max-width: 800px;           
     margin: 1.5rem auto 3rem auto;  
@@ -105,7 +105,7 @@ footer {
     font-size: 18px;
     color: var(--color-text);
     border-top: 2px solid var(--color-text);
-    font-weight: 300;
+    font-weight: 350;
     letter-spacing: 0.8px;
     }
 
